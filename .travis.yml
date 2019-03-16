@@ -4,6 +4,8 @@ jdk:
 components:
     - tools
     - platform-tools
+    - build-tools-26.0.0
+    - android-26
 before_install:
   - chmod +x gradlew
   - chmod +x gradle/wrapper/gradle-wrapper.jar

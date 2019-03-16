@@ -1,6 +1,9 @@
 language: android
 jdk:
   - oraclejdk8
+components:
+    - tools
+    - platform-tools
 before_install:
   - chmod +x gradlew
   - chmod +x gradle/wrapper/gradle-wrapper.jar

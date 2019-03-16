@@ -23,11 +23,11 @@ script:
   - sudo apt-get update && sudo apt-get install oracle-java8-installer
   - java -version
 
-before_script:
-  - chmod +x gradlew
+before_install:
+ - chmod +x gradlew
 
 script:
-  - ./gradlew assembleDebug --stacktrace
+  -  ./gradlew build connectedCheck
 
 deploy:
   provider: releases

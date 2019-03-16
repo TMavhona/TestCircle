@@ -25,9 +25,9 @@ script:
 
 before_install:
  - chmod +x gradlew
-
+ 
 script:
-  -  ./gradlew build connectedCheck
+ - chmod +x ./gradlew build connectedCheck
 
 deploy:
   provider: releases
